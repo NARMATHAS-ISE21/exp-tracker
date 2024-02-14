@@ -1,0 +1,121 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+body{
+  background-image: url(/src/assets/bg.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.item{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: rgb(248, 187, 108);
+  padding: 10px;
+  width: 350px;
+  height: 30px;
+}
+.exp-tracker{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+
+}
+.delete-btn{
+  display: flex;
+  align-items: flex-end;
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.item.positive{
+  border-left: 14px solid green;
+  border-color: green;
+}
+.item.negative{
+  border-left: 14px solid red;
+  border-color: red;
+}
+.item:hover{
+  border-bottom: 3px groove blueviolet;
+  transform: scale(1.1)
+}
+.head{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  color: yellow;
+}
+.balance{
+  display: flex;
+  justify-content: center;
+  color: aquamarine;
+}
+.income-expense{
+display: flex;
+justify-content: space-around;
+padding: 1rem;
+border-radius: 14px;
+box-shadow: 0 2px 8px #000;
+background-color: navajowhite;
+max-width: 450px;
+margin: 1rem auto;
+}
+.income,.expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.income.tit,.expense.tit{
+  font-size: 14px;
+  color: #000;
+}
+.income{
+  color: green;
+}
+.expense{
+  color: crimson;
+}
+.block{
+  width: 2px;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+}
+.frame{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #000;
+  background-color: navajowhite;
+  height: 240px;
+  width: 270px;
+  margin: 5px auto;
+}
+.fid,.fit{
+  display: flex;
+  justify-content: flex-start;
+}
+.sub{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 100px;
+  width: 145px;
+}
+.sub:active{
+  border-color: #000;
+  background-color: rgb(161, 44, 161);
+}
+.error{
+  color: red;
+  font-size: 12px;
+  margin: 0 0 0.75rem 0;
+}
